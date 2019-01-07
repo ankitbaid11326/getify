@@ -5,6 +5,8 @@ import { createMaterialTopTabNavigator, createTabNavigator } from 'react-navigat
 // Components
 import Repositories from '../Repositories/repositories.component';
 import Stars from '../Stars/stars.component';
+import Overview from '../Overview/overview.component';
+import Fork from '../Fork/fork.component';
 
 // get screen dimensions
 let screenW = Dimensions.get('window').width;
@@ -23,13 +25,19 @@ isIphoneX = () => {
 
 const TopNav = createMaterialTopTabNavigator(
   {
+    Overview: Overview,
     Repositories: {
       screen: ({ navigation }) => <Repositories navigation={navigation} />
     },
-    Stars: Stars
+    Stars: Stars,
+    Fork: Fork
   },
   {
     tabBarOptions: {
+      scrollEnabled: true,
+      tabStyle: {
+        width: 130
+      },
       style: {
         fontSize: 24,
         fontWeight: '700',

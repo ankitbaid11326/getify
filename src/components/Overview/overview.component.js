@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, View } from 'react-native';
 
-export default class Stars extends Component {
+export default class Overview extends Component {
   render() {
     return (
       <View
@@ -12,10 +12,8 @@ export default class Stars extends Component {
           alignItems: 'center'
         }}
       >
-        <Text> Stars </Text>
+        <Text> Overview </Text>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({});
