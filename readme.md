@@ -4,7 +4,7 @@
 cd getify
 ```
 
-### open to ios/getify.xcodeproj
+### open ios/getify.xcodeproj
 
 
 ```
